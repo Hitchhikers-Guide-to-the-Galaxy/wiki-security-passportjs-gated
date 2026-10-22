@@ -1,0 +1,58 @@
+{
+  "name": "wiki-security-passportjs-gated",
+  "version": "0.14.0-gated.1",
+  "description": "wiki-security-passportjs 0.14.0 with its login-to-view block swapped for wiki-view-gate (splash page, blessed public pages, assets and listings gated, canonical path matching) and the hitchhiker client bootstrap appended to client/security.js. OAuth login is upstream's, untouched. Supersedes wiki-security-hitchhiker-passport on the Hitchhiker farms.",
+  "author": "Paul Rodwell <paul.rodwell@btinternet.com> (http://rodwell.me)",
+  "license": "MIT",
+  "dependencies": {
+    "@passport-js/passport-twitter": "^1.0.8",
+    "coffeescript": "^2.4.1",
+    "express-handlebars": "^9.0.1",
+    "jwt-decode": "^4.0.0",
+    "lodash": "^4.17.19",
+    "passport": "^0.3.2",
+    "passport-github2": "^0.1.12",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-oauth2": "^1.6.1",
+    "wiki-view-gate": "^0.2.0"
+  },
+  "devDependencies": {
+    "coffeeify": "^3.0.1",
+    "grunt": "^1.2.1",
+    "grunt-browserify": "^6.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-git-authors": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-security-passportjs-gated.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-security-passportjs-gated/issues"
+  },
+  "homepage": "https://github.com/Hitchhikers-Guide-to-the-Galaxy/wiki-security-passportjs-gated#readme",
+  "fedwiki": {
+    "provides": {
+      "bootstrap": [
+        "hitchhiker",
+        "chooser",
+        "fish-picker"
+      ]
+    }
+  },
+  "hitchhiker": {
+    "upstream": "wiki-security-passportjs",
+    "upstreamVersion": "0.14.0",
+    "appended": "client/security.js below the marker comment",
+    "swapped": "server/social.coffee: the restricted block is wiki-view-gate (see THE GATE SWAP)",
+    "supersedes": "wiki-security-hitchhiker-passport"
+  },
+  "keywords": [
+    "wiki",
+    "federated-wiki",
+    "security",
+    "passportjs",
+    "login-to-view",
+    "hitchhiker"
+  ]
+}
