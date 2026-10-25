@@ -1,6 +1,6 @@
 {
   "name": "wiki-security-passportjs-gated",
-  "version": "0.14.0-gated.1",
+  "version": "0.14.0-gated.2",
   "description": "wiki-security-passportjs 0.14.0 with its login-to-view block swapped for wiki-view-gate (splash page, blessed public pages, assets and listings gated, canonical path matching) and the hitchhiker client bootstrap appended to client/security.js. OAuth login is upstream's, untouched. Supersedes wiki-security-hitchhiker-passport on the Hitchhiker farms.",
   "author": "Paul Rodwell <paul.rodwell@btinternet.com> (http://rodwell.me)",
   "license": "MIT",
